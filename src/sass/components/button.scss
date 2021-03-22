@@ -1,5 +1,6 @@
-.button-lesson,
-.button-consultation {
+.free-lesson-link,
+.consultation--link {
+  display: block;
   font-family: $secondary-font;
   color: $primary-text-color;
   background-color: $second-color;
@@ -31,14 +32,15 @@
   }
 }
 
-.button-lesson {
+.free-lesson-link {
   letter-spacing: 1.43px;
+  margin: 0 auto;
 
   @media (min-width: 1280px) {
     letter-spacing: 2.4px;
   }
 }
 
-.button-consultation {
+.consultation--link {
   letter-spacing: 1.1px;
 }
