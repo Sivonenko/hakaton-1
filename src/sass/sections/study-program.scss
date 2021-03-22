@@ -1,0 +1,482 @@
+  .study-program {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 320px;
+  height: auto;
+  flex-direction: column;
+  margin: 0 auto;
+  background-color: $background-color;
+  background-image: url(../images/mobile/study.png);
+  background-repeat: no-repeat;
+  background-position: right bottom 305px;
+  padding-bottom: 415px;
+  }
+
+  .arguments-cover {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: inherit;
+  height: inherit;
+  position: relative;
+  }
+  
+  .program__title {
+    font-family: $main-font;
+    font-weight: $secondary-font-weight;
+    font-size: 20px;
+    line-height: 33px;
+    letter-spacing: 1px;
+    color: $primary-text-color;
+    margin-bottom: 25px;
+    text-align: center;
+    display: block;
+    padding-top: 42.5px;
+  }
+  
+  .program__period-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    position: relative;
+    padding-left: 60px;
+  }
+  
+  .program__period-name {
+    font-family: $main-font;
+    font-weight: $main-font-weight;
+    font-size: 15px;
+    line-height: 0px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    line-height: 29.17px;
+    text-align: left;
+    margin-bottom: 8px;
+  }
+  
+  .program__period-element {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    flex-direction: column;
+    width: 207px;
+    height: auto;
+    color: $primary-text-color;
+    position: relative;
+    padding-left: 32px;
+    padding-bottom: 28px;
+  }
+
+  .program__period-element:not(:last-child)::before {
+    content: '';
+    display: block;
+    width: 3px;
+    height: 100%;
+    background-color: $fifth-text-color-opacity;
+    position: absolute;
+    top: 20px;
+    left: 0px;
+  }
+  
+  .program__period-name {
+    font-family: $main-font;
+    font-size: 15px;
+    line-height: 29.17px;
+    letter-spacing: 0.5px;
+    font-weight: $secondary-font-weight;
+    position: relative;
+  }
+  
+  .program__period-name::before {
+    content: '';
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: $second-color;
+    position: absolute;
+    left: -35px;
+    top: 10px;
+  }
+  
+  .program__period-moduls-list {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+  }
+  
+  .program__period-moduls-element {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 176px;
+    height: auto;
+    color: $primary-text-color;
+  }
+  
+  .program__period-moduls-name {
+    font-family: $main-font;
+    font-weight: $fourth-font-weight;
+    font-size: 13px;
+    line-height: 29.17px;
+    letter-spacing: 0.6px;
+    color: $second-color;
+    text-align: left;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    width: 100%;
+    margin-bottom: 2px;
+  }
+  
+  .program__period-moduls-name::before {
+    content: '';
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: $second-color;
+    background-position: left;
+    margin-top: 14px;
+    margin-bottom: 18px;
+    margin-right: 15px;
+  }
+  
+  
+  .program__period-moduls-part {
+    font-family: $main-font;
+    font-weight: $third-font-weight;
+    font-size: 11px;
+    line-height: 20px;
+    letter-spacing: 0.7px;
+    color: $fourth-text-color-opacity;
+  }
+  
+  .program__period-moduls-part-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    flex-direction: column;
+    align-content: flex-start;
+    width: 155px;
+  }
+
+  @media (min-resolution: 192dpi) {
+    .study-program{
+    background-image: url(../images/mobile/study@2x.png);
+    background-repeat: no-repeat;
+    }
+  }
+
+
+@media (min-width: 768px) {
+  .study-program {
+  width: 100%;
+  height: auto;
+  flex-direction: row;
+  margin: 0 auto;
+  background-color: $background-color;
+  background-image: url(../images/tablet/study.png);
+  background-repeat: no-repeat;
+  background-position: right bottom 220px;
+  padding-bottom: 315px;
+  }
+  
+  .program__title {
+    font-family: $main-font;
+    font-weight: $secondary-font-weight;
+    font-size: 26px;
+    line-height: 62.54px;
+    letter-spacing: 1px;
+    color: $primary-text-color;
+    text-align: left;
+    margin-bottom: 33px;
+    padding-top: 42.5px;
+  }
+  
+  .program__period-list {
+    padding-left: 90px;
+  }
+  
+  .program__period-name {
+    font-family: $main-font;
+    font-size: 15px;
+    line-height: 29.17px;
+    letter-spacing: 1.3px;
+    font-weight: $main-font-weight;
+    margin-bottom: 11px;
+    text-transform: uppercase;
+    position: relative;
+  }
+  
+  .program__period-element {
+    width: 590px;
+    justify-content: space-between;
+    color: $primary-text-color;
+    position: relative;
+    padding-left: 55px;
+  }
+  
+  .program__period-element:not(:last-child)::before {
+    content: '';
+    display: block;
+    width: 3px;
+    height: 100%;
+    background-color: $fifth-text-color-opacity;
+    position: absolute;
+    top: 20px;
+    left: 0px;
+  }  
+  
+  .program__period-name::before {
+    content: '';
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: $second-color;
+    position: absolute;
+    left: -58px;
+    top: 10px;
+  }
+  
+  .program__period-moduls-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: start;
+  }
+  
+  .program__period-moduls-element {
+    width: 176px;
+  }
+  
+  .program__period-moduls-name {
+    font-family: $main-font;
+    font-weight: $fourth-font-weight;
+    font-size: 13px;
+    line-height: 29.17px;
+    letter-spacing: 0.6px;
+    color: $second-color;
+    text-align: left;
+    display: flex;
+    align-items: flex-start;
+    width: 100%;
+    margin-bottom: 4px;
+  }
+  
+  .program__period-moduls-name::before {
+    content: '';
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: $second-color;
+    background-position: left;
+    margin-top: 14px;
+    margin-bottom: 18px;
+    margin-right: 15px;
+  }
+  
+  
+  .program__period-moduls-part {
+    font-family: $main-font;
+    font-weight: $third-font-weight;
+    font-size: 11px;
+    line-height: 20px;
+    letter-spacing: 0.7px;
+    color: $fourth-text-color-opacity;
+  }
+  
+  .program__period-moduls-part-list {
+    width: 155px;
+  }
+
+  @media (min-resolution: 192dpi) {
+    .study-program {
+    background-image: url(../images/tablet/study@2x.png);
+    background-repeat: no-repeat;
+    }
+  }
+}
+
+  @media (min-width: 1280px) {
+  .study-program {
+    background-image: url(../images/desktop1280/study.png);
+    background-repeat: no-repeat;
+    background-position: left bottom 240px;
+    padding-bottom: 433px;
+    position: relative;
+  }
+
+  .study-program::before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: $fifth-text-color-opacity;
+    position: absolute;
+    top: 160px;
+  }
+  
+  .program__title {
+    font-size: 42px;
+    line-height: 62.54px;
+    letter-spacing: 2px;
+    color: $primary-text-color;
+    margin-bottom: 85px;
+    padding-top: 64.5px;
+  }
+  
+  .program__period-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-left: 0;
+  }
+  
+  .program__period-name {
+    font-size: 19px;
+    letter-spacing: 2px;
+    margin-bottom: 34px;
+    position: relative;
+  }
+  
+  .program__period-element {
+    width: 180px;
+    position: relative;
+    padding-left: 0;
+    padding-bottom: 0;
+  }
+  
+  .program__period-element:not(:last-child)::before {
+    content: '';
+    display: block;
+    width: 0;
+    height: 0;
+  }  
+  
+  .program__period-name::before {
+    content: '';
+    display: block;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background-color: $second-color;
+    position: absolute;
+    left: 0px;
+    top: -58px;
+  }
+  
+  .program__period-moduls-element {
+    width: 205px;
+  }
+
+  .program__period-moduls-element:not(:last-of-type) {
+    margin-bottom: 31px;
+  }
+  
+  .program__period-moduls-name {
+    font-size: 18px;
+    letter-spacing: 1px;
+    margin-bottom: 8px;
+  }
+  
+  .program__period-moduls-name::before {
+    width: 28px;
+  }
+  
+  .program__period-moduls-part {
+    font-size: 15px;
+    line-height: 29.17px;
+    letter-spacing: 0.8px;
+  }
+  
+  .program__period-moduls-part-list {
+    width: 100%;
+  }
+
+  @media (min-resolution: 192dpi) {
+    .study-program {
+    background-image: url(../images/desktop1280/study@2x.png);
+    background-repeat: no-repeat;
+    }
+  }
+}
+
+@media (min-width: 1680px) {
+    .study-program {
+    background-image: url(../images/desktop1680/study.png);
+    background-position: 0 100%;
+    padding-bottom: 275px;
+  }
+
+  .study-program::before {
+    content: '';
+    height: 6px;
+    top: 258px;
+  }
+  
+  .program__title {
+    font-size: 45.83px;
+    letter-spacing: 2.4px;
+    margin-bottom: 157px;
+    padding-top: 113px;
+  }
+  
+  .program__period-name {
+    font-size: 20.83px;
+    letter-spacing: 2.3px;
+    margin-bottom: 26px;
+  }
+  
+  .program__period-element {
+    width: 250px;
+  }
+  
+  .program__period-name::before {
+    content: '';
+    display: block;
+    width: 22px;
+    height: 22px;
+    left: 0px;
+    top: -80px;
+  }
+  
+  .program__period-moduls-element {
+    width: 210px;
+  }
+
+  .program__period-moduls-element:not(:last-of-type) {
+    padding-bottom: 28px; 
+  }
+  
+  .program__period-moduls-name {
+    font-size: 20.83px;
+    margin-bottom: 27px;
+  }
+  
+  .program__period-moduls-part {
+    font-size: 18px;
+    line-height: 29.17px;
+    letter-spacing: 1px;
+  }
+  
+  .program__period-moduls-part-list {
+    width: 100%;
+  }
+
+  @media (min-resolution: 192dpi) {
+    .study-program {
+    background-image: url(../images/desktop1680/study@2x.png);
+    background-repeat: no-repeat;
+    }
+  }
+}

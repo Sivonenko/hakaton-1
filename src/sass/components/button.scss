@@ -1,0 +1,44 @@
+.button-lesson,
+.button-consultation {
+  font-family: $secondary-font;
+  color: $primary-text-color;
+  background-color: $second-color;
+  font-size: 11px;
+  font-weight: 700;
+  width: 250px;
+  line-height: 48px;
+  text-align: center;
+  text-transform: uppercase;
+  border: 2px solid $second-color;
+  cursor: pointer;
+
+  &:hover {
+    color: $second-color;
+    background-color: $primary-text-color;
+  }
+
+  &:focus {
+    color: $second-color;
+    background-color: $primary-text-color;
+    border: none;
+    outline: 3px solid $second-color;
+  }
+
+  @media (min-width: 1280px) {
+    font-size: 14px;
+    width: 300px;
+    line-height: 68px;
+  }
+}
+
+.button-lesson {
+  letter-spacing: 1.43px;
+
+  @media (min-width: 1280px) {
+    letter-spacing: 2.4px;
+  }
+}
+
+.button-consultation {
+  letter-spacing: 1.1px;
+}

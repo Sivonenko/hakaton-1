@@ -1,0 +1,208 @@
+ul {
+  list-style: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.teacher {
+  padding-top: 245px;
+  padding-bottom: 56px;
+}
+
+.teacher-title {
+  font-size: 20px;
+  font-family: $main-font;
+  color: $secondary-text-color;
+  font-weight: $secondary-font-weight;
+  line-height: 1.5;
+  margin-bottom: 30px;
+}
+
+.teacher-image-wrapper {
+  margin-bottom: 24px;
+}
+
+.teacher-contant__title {
+  font-size: 16px;
+  font-family: $main-font;
+  color: $secondary-text-color;
+  font-weight: $secondary-font-weight;
+  line-height: 1.823;
+  margin-bottom: 10px;
+}
+
+.teacher-contant__list {
+  padding-top: 28px;
+  border-top: solid 1px $third-text-color;
+
+  &::after {
+    content: "";
+    display: block;
+    background-color: $second-color;
+    width: 25px;
+    height: 2px;
+    margin-left: 16px;
+    margin-bottom: 20px;
+  }
+}
+
+.teacher-contant__list-item {
+  font-size: 13px;
+  font-family: $main-font;
+  color: $secondary-text-color;
+  font-weight: $secondary-font-weight;
+  margin-bottom: 24px;
+  padding-left: 34px;
+  position: relative;
+
+  &::before {
+    content: "";
+    display: block;
+    width: 16px;
+    height: 12px;
+    background-image: url("../images/section-icons/icon check.png");
+    position: absolute;
+    top: 2px;
+    left: 0;
+  }
+
+}
+
+
+.teacher-contant__text {
+  font-size: 11px;
+  font-family: $main-font;
+  color: $third-text-color;
+  line-height: 1.818;
+  margin-bottom: 20px;
+}
+
+.teacher-conant__link {
+  display: block;
+  font-size: 11px;
+  font-family: $main-font;
+  color: $second-color;
+  line-height: 2.652;
+  margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+  .teacher {
+    padding-top: 222px;
+  }
+
+  .teacher-title {
+    font-size: 26px;
+    line-height: 2.405;
+    margin-bottom: 36px;
+  }
+
+  .teacher-contant-wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .teacher-contant {
+    width: 380px;
+
+    &__title {
+      font-size: 20px;
+      line-height: 1.458;
+      margin-bottom: 14px;
+    }
+
+    &__list {
+      margin-right: 36px;
+
+      &::after {
+        margin-left: 0;
+      }
+    }
+
+    &__list-item {
+      line-height: 1.538;
+
+    }
+  }
+
+}
+
+@media (min-width: 1280px) {
+  .teacher {
+    padding-top: 94px;
+  }
+
+  .teacher-title {
+    font-size: 42px;
+    line-height: 1.489;
+    margin-bottom: 60px;
+  }
+
+  .teacher-contant {
+    width: 600px;
+
+    &__title {
+      font-size: 29px;
+      line-height: 1;
+      margin-bottom: 20px;
+    }
+
+    &__list {
+      padding-top: 40px;
+      margin-right: 120px;
+
+      &::after {
+        margin-bottom: 34px;
+      }
+    }
+
+    &__list-item {
+      font-size: 16.667px;
+      line-height: 1.75;
+      margin-bottom: 26px;
+      padding-left: 50px;
+
+      &::before {
+        width: 20px;
+        height: 16px;
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+
+    }
+
+    &__text {
+      font-size: 16.667px;
+      line-height: 1.75;
+      margin-bottom: 32px;
+    }
+
+    &__link {
+      font-size: 16.667px;
+      line-height: 1.75;
+    }
+  }
+
+}
+
+@media (min-width: 1680px) {
+  .teacher {
+    padding-top: 332px;
+  }
+
+  .teacher-title {
+    font-size: 46px;
+    line-height: 1.365;
+    margin-bottom: 80px;
+  }
+
+  .teacher-contant__text {
+    margin-bottom: 34px;
+  }
+
+
+}
