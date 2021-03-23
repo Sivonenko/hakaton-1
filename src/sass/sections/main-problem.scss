@@ -83,16 +83,6 @@
     margin-bottom: 16px;
   }
 
-  // .description__list-item::before {
-  //   display: block;
-  //   content: '';
-  //   width: 25px;
-  //   height: 2px;
-  //   background-color: $second-color;
-  //   position: absolute;
-  //   top: -21px;
-  // }
-
   .specification {
     margin-top: 260px;
   }
@@ -156,6 +146,7 @@
     padding-top: 78px;
     padding-bottom: 29px;
     position: relative;
+    cursor: pointer;
   }
 
   .specification__list-item:not(:last-child) {
@@ -232,8 +223,8 @@
     padding-top: 40px;
   }
   .description__list {
-    padding-top: 37px;
-    padding-bottom: 44px;
+    margin: 0 auto;
+    padding: 37px 78px 42px 108px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
