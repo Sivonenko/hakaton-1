@@ -1,0 +1,97 @@
+<section class="section-form" id="section-form">
+  <div class="registration-form registration-form--indent container">
+    <h4 class="registration-form__title">
+      Регистрация на
+      <span class="registration-form__title--color">бесплатную</span> телефонную
+      <span class="registration-form__title--tablet-br"
+        ><span class="registration-form__title--color">консультацию</span>
+        <span class="registration-form__title--br">по нюансам ЗНО</span></span
+      >
+      <span
+        class="registration-form__title--br registration-form__title--tablet-br"
+        >по английскому языку</span
+      >
+    </h4>
+    <p
+      class="registration-form__description registration-form__description--indent"
+    >
+      Оставь заявку на участие в
+      <span class="registration-form__description--color"
+        >бесплатном занятии.</span
+      >
+      <span class="registration-form__description--tablet-br"
+        >С вами свяжется консультант
+        <span class="registration-form__description--br"
+          >и ответит на вопросы.</span
+        ></span
+      >
+    </p>
+    <form action="#" class="form-contact">
+      <input
+        name="user_name"
+        type="text"
+        class="form-contact__input"
+        placeholder="Имя*"
+        required
+        minlength="2"
+      />
+      <input
+        name="user_tel"
+        value=""
+        id="phone"
+        type="tel"
+        class="form-contact__input tel"
+        placeholder="Телефон*"
+        required
+        size="10"
+        minlength="10"
+        maxlength="19"
+      />
+      <script>
+        window.addEventListener('DOMContentLoaded', function () {
+          [].forEach.call(document.querySelectorAll('.tel'), function (input) {
+            var keyCode;
+            function mask(event) {
+              event.keyCode && (keyCode = event.keyCode);
+              var pos = this.selectionStart;
+              if (pos < 3) event.preventDefault();
+              var matrix = '+38 (___) ___-__-__',
+                i = 0,
+                def = matrix.replace(/\D/g, ''),
+                val = this.value.replace(/\D/g, ''),
+                new_value = matrix.replace(/[_\d]/g, function (a) {
+                  return i < val.length ? val.charAt(i++) || def.charAt(i) : a;
+                });
+              i = new_value.indexOf('_');
+              if (i != -1) {
+                i < 5 && (i = 3);
+                new_value = new_value.slice(0, i);
+              }
+              var reg = matrix
+                .substr(0, this.value.length)
+                .replace(/_+/g, function (a) {
+                  return '\\d{1,' + a.length + '}';
+                })
+                .replace(/[+()]/g, '\\$&');
+              reg = new RegExp('^' + reg + '$');
+              if (
+                !reg.test(this.value) ||
+                this.value.length < 5 ||
+                (keyCode > 47 && keyCode < 58)
+              )
+                this.value = new_value;
+              if (event.type == 'blur' && this.value.length < 5)
+                this.value = '';
+            }
+
+            input.addEventListener('input', mask, false);
+            input.addEventListener('focus', mask, false);
+            input.addEventListener('blur', mask, false);
+            input.addEventListener('keydown', mask, false);
+          });
+        });
+      </script>
+      <button class="free-lesson-link">Хочу на бесплатное занятие</button>
+    </form>
+  </div>
+</section>

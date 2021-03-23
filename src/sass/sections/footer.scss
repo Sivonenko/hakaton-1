@@ -1,0 +1,191 @@
+.footer-wrap {
+  padding-top: 25px;
+  padding-bottom: 12px;
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: 768px) {
+    flex-direction: row;
+    align-items: center;
+    padding-top: 38px;
+    padding-bottom: 38px;
+  }
+  @media (min-width: 1280px) {
+    padding-top: 45px;
+    padding-bottom: 48px;
+  }
+  @media (min-width: 1680px) {
+    padding-top: 48px;
+  }
+}
+
+.footer-wrap__tel {
+  position: relative;
+  font-size: 18px;
+  font-family: $main-font;
+  color: $background-color;
+  font-weight: $main-font-weight;
+  line-height: 2.083;
+  text-decoration: none;
+  letter-spacing: 0.8px;
+  align-self: center;
+  @media (min-width: 768px) {
+    font-size: 20px;
+    line-height: 1.875;
+    margin-right: 9%;
+    &::after {
+      content: '';
+      display: block;
+      position: absolute;
+      right: -32px;
+      top: 4px;
+      width: 1px;
+      height: 29px;
+      background-color: rgb(224, 224, 224);
+      @media (min-width: 1280px) {
+        top: 10px;
+      }
+    }
+  }
+  @media (min-width: 1280px) {
+    font-size: 27px;
+    margin-right: 6%;
+  }
+  @media (min-width: 1680px) {
+    margin-right: 5%;
+  }
+
+  &::before {
+    content: '';
+    display: inline-block;
+    position: relative;
+    bottom: -4px;
+    right: 5px;
+    width: 20px;
+    height: 20px;
+    background-image: url(../images/tel-icon/icon_tel.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    @media (min-width: 1280px) {
+      width: 32px;
+      height: 32px;
+      background-image: url(../images/tel-icon/icon_tel_32.png);
+      bottom: -11px;
+      right: 15px;
+    }
+  }
+}
+
+.footer-wrap__insta {
+  width: 30px;
+  cursor: pointer;
+  align-self: center;
+
+  &--svg {
+    width: 37px;
+    height: 37px;
+    margin-top: 15px;
+    margin-bottom: 25px;
+    @media (min-width: 768px) {
+      margin-top: 0px;
+      margin-bottom: 0px;
+    }
+  }
+}
+
+.logo-link {
+  text-decoration: none;
+
+  @media (min-width: 768px) {
+    margin-right: 12%;
+    order: -1;
+  }
+  @media (min-width: 1280px) {
+    margin-right: 22%;
+  }
+  @media (min-width: 1680px) {
+    margin-right: 24%;
+  }
+}
+
+.logo-link__wrap {
+  align-self: flex-start;
+}
+
+.fire-wrap {
+  display: flex;
+  justify-content: center;
+}
+.fire-wrap__text {
+  font-size: 15px;
+  font-family: $main-font;
+  color: rgb(0, 0, 0);
+  font-weight: $main-font-weight;
+  line-height: 1.333;
+  letter-spacing: 1px;
+
+  @media (min-width: 768px) {
+    font-size: 25px;
+  }
+  @media (min-width: 1280px) {
+    font-size: 25px;
+  }
+}
+
+.logo-link__description {
+  font-size: 5.3px;
+  font-family: $main-font;
+  color: rgb(0, 0, 0);
+  font-weight: $main-font-weight;
+  text-transform: uppercase;
+  line-height: 1.2;
+  text-align: center;
+  letter-spacing: 0.7px;
+
+  @media (min-width: 768px) {
+    font-size: 8.75px;
+  }
+  @media (min-width: 1280px) {
+  }
+
+  &--accent {
+    color: $second-color;
+  }
+}
+
+.fire-wrap__fire {
+  position: relative;
+  top: -4px;
+  width: 15px;
+  height: 22px;
+  @media (min-width: 768px) {
+    width: 21px;
+    height: 30px;
+  }
+}
+
+.sec-footer {
+  background-color: $background-color;
+}
+.sec-footer__wrap--description {
+  font-size: 11px;
+  font-family: $main-font;
+  color: $fourth-text-color-opacity;
+  line-height: 6.409;
+  text-align: center;
+  background-color: $background-color;
+  letter-spacing: 0.7px;
+  @media (min-width: 768px) {
+    text-align: left;
+  }
+  @media (min-width: 1280px) {
+    font-size: 14.583px;
+    line-height: 5.1;
+  }
+}
+
+@media (min-width: 1680px) {
+  .container-xl {
+    width: 1320px;
+  }
+}

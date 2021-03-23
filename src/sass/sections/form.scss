@@ -1,0 +1,233 @@
+.section-form {
+  position: relative;
+  background-image: url(../images/mobile/registration_bg.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  &::before {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: rgba(17, 21, 23, 0.8);
+    z-index: 2;
+  }
+}
+
+.registration-form {
+  position: relative;
+  text-align: center;
+  z-index: 3;
+  color: $primary-text-color;
+
+  &__title {
+    font-size: 14px;
+    line-height: 26px;
+    font-weight: $secondary-font-weight;
+    letter-spacing: 0.7px;
+
+    &--br {
+      @media (max-width: 767px) {
+        display: block;
+      }
+    }
+  }
+
+  &__description {
+    font-size: 11px;
+    line-height: 20px;
+    font-weight: $fifth-font-weight;
+    letter-spacing: 0.55px;
+
+    &--br {
+      @media (max-width: 767px) {
+        display: block;
+      }
+    }
+
+    &--indent {
+      padding-top: 20px;
+      padding-bottom: 26px;
+    }
+  }
+
+  &__title--color,
+  &__description--color {
+    color: $second-color;
+  }
+
+  &--indent {
+    padding-top: 52px;
+    padding-bottom: 58px;
+  }
+}
+
+.form-contact {
+  background: rgba (255, 255, 255, 0.9);
+
+  &__input {
+    color: $primary-text-color;
+    letter-spacing: 0.65px;
+    padding-left: 22px;
+    border: 1px solid rgb(255, 255, 255);
+    width: 280px;
+    height: 50px;
+    background: transparent;
+
+    &:focus {
+      outline: none;
+    }
+
+    &:invalid:not(:placeholder-shown) {
+      border-color: red;
+    }
+
+    &:valid {
+      border-color: green;
+    }
+
+    &:nth-child(1) {
+      margin-bottom: 20px;
+    }
+
+    &:nth-child(2) {
+      margin-bottom: 55px;
+    }
+
+    &::placeholder {
+      font-family: $main-font;
+      font-weight: $secondary-font-weight;
+      color: $primary-text-color;
+      font-size: 13px;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .section-form {
+    background-image: url(../images/tablet/registration_bg_tablet.png);
+  }
+
+  .registration-form__title--tablet-br {
+    display: block;
+  }
+
+  .registration-form__description--tablet-br {
+    display: block;
+  }
+
+  .form-contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .registration-form {
+    &__title {
+      font-size: 22px;
+      line-height: 38px;
+      letter-spacing: 1.1px;
+    }
+
+    &__description {
+      font-size: 15px;
+      line-height: 20px;
+      letter-spacing: 0.75px;
+
+      &--indent {
+        padding-top: 30px;
+        padding-bottom: 42px;
+      }
+    }
+
+    &--indent {
+      padding-top: 60px;
+      padding-bottom: 64px;
+    }
+  }
+
+  .form-contact__input {
+    width: 400px;
+  }
+
+  .form-contact__input:nth-child(2) {
+    margin-bottom: 30px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .section-form {
+    background-image: url(../images/desktop1280/registration_bg_desktop_1280.png);
+  }
+
+  .registration-form {
+    &__title {
+      font-size: 38px;
+      line-height: 50px;
+      letter-spacing: 1.9px;
+    }
+
+    &__description {
+      font-size: 18px;
+      line-height: 24px;
+      letter-spacing: 0.9px;
+
+      &--indent {
+        padding-top: 50px;
+        padding-bottom: 53px;
+      }
+    }
+
+    &--indent {
+      padding-top: 86px;
+      padding-bottom: 88px;
+    }
+  }
+
+  .form-contact__input {
+    width: 620px;
+    height: 72px;
+    background-color: transparent;
+
+    &::placeholder {
+      font-size: 20px;
+    }
+  }
+
+  .form-contact__input:nth-child(2) {
+    margin-bottom: 57px;
+  }
+}
+
+@media (min-width: 1680px) {
+  .section-form {
+    background-image: url(../images/desktop1680/registration_bg_desktop_1680.png);
+  }
+
+  .registration-form {
+    &__description {
+      font-size: 25px;
+      line-height: 38px;
+      letter-spacing: 1.25px;
+
+      &--indent {
+        padding-top: 66px;
+        padding-bottom: 52px;
+      }
+    }
+
+    &--indent {
+      padding-top: 128px;
+      padding-bottom: 100px;
+    }
+  }
+
+  &::placeholder {
+    font-size: 20px;
+  }
+
+  .form-contact__input:nth-child(2) {
+    margin-bottom: 57px;
+  }
+}
