@@ -116,7 +116,7 @@ body.show-modal .modal {
     position: relative;
     top: -4px;
     width: 20px;
-    height: 28px;
+    height: 20px;
     fill: $second-color;
 
     &--svg {
@@ -130,7 +130,7 @@ body.show-modal .modal {
     }
 
     @media (min-width: 768px) {
-      width: 21px;
+      width: 28px;
       height: 30px;
     }
   }
