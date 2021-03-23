@@ -3,13 +3,13 @@
 .backdrop {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   position: fixed;
   top: 0;
   left: 0;
   width: 100vw;
   height: 100vh;
-  background-color: rgba(29, 29, 29, 0.85);
+  background-color: rgba(29, 29, 29, 0.9);
   z-index: 999;
 
   pointer-events: none;
@@ -35,7 +35,6 @@ body.show-modal .modal {
 
 .modal {
   padding: 24px 20px;
-  background-color: rgba(29, 29, 29, 0.85);
 
   &-menu {
     padding: 58px 26px 56px;
@@ -56,8 +55,20 @@ body.show-modal .modal {
         &::hover {
           cursor: pointer;
         }
+
+        @media (min-width: 768px) {
+          font-size: $third-font-size;
+        }
       }
     }
+
+    @media (min-width: 768px) {
+      padding-left: 120px;
+    }
+  }
+
+  @media (min-width: 768px) {
+    width: 75%;
   }
 }
 
@@ -169,6 +180,10 @@ body.show-modal .modal {
       border: none;
       outline: 3px solid $second-color;
     }
+  }
+
+  @media (min-width: 768px) {
+    display: none;
   }
 }
 
